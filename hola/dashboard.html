@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="asset/styles/master.css">
+    <script src="/asset/js/jquery-3.7.1.min.js"></script>
+    <script src="/asset/js/sweetalert2.all.min.js"></script>
+    <script src="/asset/js/carrito.js"></script>
+</head>
+
+<body>
+    <main class="dashboard">
+        <!-- Inicio de Barra navegadora -->
+        <nav class="sidebar" id="sidebar">
+            <ul class="sidebar-list">
+                <!-- Enlace "Inicio" -->
+                <li class="sidebar-item">
+                    <a href="pagina_inicial.html">Inicio</a>
+                </li>
+        
+                <!-- Enlace "Usuarios" -->
+                <li class="sidebar-item">
+                    <a href="usuarios.html">Usuarios</a>
+                    <ul class="submenu">
+                        <li><a href="crear_usuario.html">Crear</a></li>
+                    </ul>
+                </li>
+        
+                <!-- Enlace "Productos" -->
+                <li class="sidebar-item">
+                    <a href="productos.html">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="crear_producto.html">Crear</a></li>
+                    </ul>
+                </li>
+        
+                <!-- Enlace "Inventario" -->
+                <li class="sidebar-item">
+                    <a href="inventario.html">Inventario</a>
+                    <ul class="submenu">
+                        <li><a href="crear_inventario.html">Crear</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Fin de navegador -->
+
+        <!-- Inicio contenido inicial -->
+        <div class="main-content" id="main-content">
+            <!-- Inicio de contenido cabecera -->
+            <header class="header">
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+                <div class="header-title"><img class="mi-imagen" src="asset/img/logotipo.PNG"
+                        alt="Descripción de la imagen"></div>
+                <section class="categories">
+                    <div class="category-card">
+                        <h3>Electrónica</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Ropa</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Hogar</h3>
+                    </div>
+                </section>
+
+                <div class="user-info">
+                    <img src="/asset/img/no-foto.png" class="user-photo" id="user-photo" alt="">
+                    <div class="dropdown" id="dropdown">
+                        <div class="dropdown-menu">
+                            <button class="dropdown-item">Nombre del usuario</button>
+                            <button class="dropdown-item">Perfil</button>
+                            <button class="dropdown-item">Cerrar sesión</button>
+                            <button class="dropdown-item">Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Fin contenido cabecera -->
+
+            <!-- Inicio de área de contenido -->
+            <div class="content">
+                <!--inicio listado targetas-->
+                <div class="card">
+                    <div class="card-content">
+                        <div id="productos">
+
+                            <div class="producto" id="producto1">
+                                <img src="asset/img/images (1).jpg" alt="Producto 1">
+                                <p class="precio">Precio: $50.000</p>
+                                <div class="buton">
+                                    <button class="boton_col" onclick="agregarAlCarrito('Taza', 50.000)">
+                                        <img src="asset/img/carrito.jpg" alt="imagen1">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="producto" id="producto2">
+                                <img src="asset/img/descarga (1).jpg" alt="Producto 2">
+                                <p class="precio">Precio: $10.000</p>
+                                <button class="boton_col" onclick="agregarAlCarrito('Llavero de Foxy', 10.000)">
+                                    <img src="asset/img/carrito.jpg" alt="imagen1">
+                                </button>
+                            </div>
+                            <div class="producto" id="producto3">
+                                <img src="asset/img/descarga (2).jpg" alt="Producto 3">
+                                <p class="precio">Precio: $200.000</p>
+                                <button class="boton_col" onclick="agregarAlCarrito('Peluches FNAF', 200.000)">
+                                    <img src="asset/img/carrito.jpg" alt="imagen1">
+                                </button>
+                            </div>
+                            <div class="producto" id="producto4">
+                                <img src="asset/img/descarga (3).jpg" alt="Producto 4">
+                                <p class="precio">Precio: $300.000</p>
+                                <button class="boton_col" onclick="agregarAlCarrito('Mochila FNAF', 300.000)">
+                                    <img src="asset/img/carrito.jpg" alt="imagen1">
+                                </button>
+                            </div>
+                            <div class="producto" id="producto5">
+                                <img src="asset/img/descarga.jpg" alt="Producto 5">
+                                <p class="precio">Precio: $20.000</p>
+                                <button class="boton_col"
+                                    onclick="agregarAlCarrito('FLapiceras FNAF/paquete 10', 20.000)">
+                                    <img src="asset/img/carrito.jpg" alt="imagen1">
+                                </button>
+                            </div>
+                            <div class="producto" id="producto7">
+                                <img src="asset/img/libro1.jpg" alt="Producto 6">
+                                <p class="precio">Precio: $500.000</p>
+                                <button class="boton_col" onclick="agregarAlCarrito('Frazbear frights #1', 500.000)">
+                                    <img src="asset/img/carrito.jpg" alt="imagen1">
+                                </button>
+                            </div>
+                            <div class="producto" id="producto7">
+                                <img src="libro2.jpg" alt="Producto 7">
+                                <p class="precio">Precio: $500.000</p>
+                                <button class="boton_col" onclick="agregarAlCarrito('Los ojos de plata', 500.000)">
+                                    <img src="asset/img/carrito.jpg" alt="imagen1">
+                                </button>
+                            </div>
+                        </div>
+                        <div id=productos2>
+                            <div class="producto" id="producto8">
+                                <img src="libro3.jpg" alt="Producto 8">
+                                <p class="precio">Precio: $500.000</p>
+                                <button class="boton_col" onclick="agregarAlCarrito('Los ojos animatronicos', 500.000)">
+                                    <img src="asset/img/carrito.jpg" alt="imagen1">
+                                </button>
+                            </div>
+                            <div class="producto" id="producto9">
+                                <img src="peluches.jpg" alt="Producto 9">
+                                <p class="precio">Precio: $400.000</p>
+                                <button class="boton_col" onclick="agregarAlCarrito('Peluches FNAF', 40.000)">
+                                    <img src="asset/img/carrito.jpg" alt="imagen1">
+                                </button>
+                            </div>
+                            <div class="producto" id="producto8">
+                                <img src="libro3.jpg" alt="Producto 8">
+                                <p class="precio">Precio: $500.000</p>
+                                <button class="boton_col" onclick="agregarAlCarrito('Los ojos animatronicos', 500.000)">
+                                    <img src="asset/img/carrito.jpg" alt="imagen1">
+                                </button>
+                            </div>
+                            <div class="producto" id="producto9">
+                                <img src="peluches.jpg" alt="Producto 9">
+                                <p class="precio">Precio: $40.000</p>
+                                <button class="boton_col" onclick="agregarAlCarrito('Peluches FNAF', 40.000)">
+                                    <img src="asset/img/carrito.jpg" alt="imagen1">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin listado tragetas -->
+
+                <!-- inicio modales crear-->
+                <div class="modal-create" id="modal-create">
+                    <div class="modal-control">
+                        <spam class="close-btn" id="close-btn-create">&times;</spam>
+                        <h2>Formulario general</h2>
+                        <form id="formCreate">
+                            <input type="text" name="nombreCompleto" placeholder="Nombre completo">
+                            <select name="tipoDocumento" id="">
+                                <option value="ti">T.I</option>
+                                <option value="cc" selected>C.C</option>
+                                <option value="ce">C.E</option>
+                            </select>
+                            <input type="number" name="documento" id="" placeholder="Número de documento">
+                            <input type="text" name="correo" id="" placeholder="Correo">
+                            <select name="rol" id="">
+                                <option value="Venderor" selected>Venderor</option>
+                                <option value="Administrador">Administrador</option>
+                                <option value="Comprador">Comprador</option>
+                            </select>
+                            <input type="password" name="contrasena" id="" placeholder="Contraseña">
+                            <input type="text" name="estado" value="1" hidden>
+                            <button type="submit">Crear</button>
+                        </form>
+                    </div>
+                </div>
+                <!--FIN modales-->
+
+                <!--Inicio de modales edit-->
+                <div class="modal-edit" id="modal-edit">
+                    <div class="modal-comnter">
+                        <spam class="close-btn-edit" id="close-btn-edit">&times;</spam>
+                        <h2>Formulario Editar</h2>
+                        <form id="formEdit">
+                            <input type="text" name="editFullName" id="editId" hidden>
+
+                            <div>
+                                <label for="editFullName">Nombre Completo</label>
+                                <input type="text" name="fullName" id="editFullName" placeholder="Jeremías Springfield"
+                                    re>
+                            </div>
+
+                            <div>
+                                <label for="editDocumentType">Tipo de documento</label>
+                                <select name="tipoDocumento" id="editDocumentType">
+                                    <option value="ti">T.I</option>
+                                    <option value="cc" selected>C.C</option>
+                                    <option value="ce">C.E</option>
+                                </select>
+                                <input type="number" name="documento" id="" placeholder="Número de documento">
+                            </div>
+
+                            <div>
+                                <label for="editFilID"></label>
+                                <input type="text" name="correo" id="editFileId" placeholder="Correo">
+                            </div>
+
+                            <div>
+                                <label for="editRole"></label>
+                                <select name="rol" id="editRole">
+                                    <option value="Venderor" selected>Venderor</option>
+                                    <option value="Administrador">Administrador</option>
+                                    <option value="Comprador">Comprador</option>
+                                </select>
+                            </div>
+
+                            <input type="text" name="estado" id="editStatus" value="1">
+
+                            <div class="modal-action">
+                                <button type="submit" class="save-btn">Actualizar</button>
+                                <button type="button" class="cancel-btn" id="cancel-btn">Cancelar</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <!--Fin modales edit-->
+
+            </div>
+            <!-- Fin de área de contenido -->
+        </div>
+        <!-- Fin contenido inicial -->
+    </main>
+</body>
+<script src="/asset/js/script.js"></script>
+
+</html>

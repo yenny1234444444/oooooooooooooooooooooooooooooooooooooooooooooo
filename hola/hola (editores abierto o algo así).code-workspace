@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../MiniTrabajo/proyecto_Pablo6/css"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "hola"
+	}
+}

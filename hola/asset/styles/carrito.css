@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+#carrito {
+    border: 1px solid #122C34;
+    padding: 10px;
+    width: 300px;
+    background-color: #18324E;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-carrito li {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lista-carrito li button {
+    background-color: #dc3545;
+    color: #122C34;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#lista-carrito li button:hover {
+    background-color: #c82333;
+}
+
+#total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #4EA5D9;
+    color: #122C34;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #44CFCB;
+}
